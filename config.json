@@ -1,0 +1,6 @@
+{
+    "secure": "0",
+    "server": "localhost",
+    "port": "8942",
+    "debug": true
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shh</title>
+        <script src="init.js"></script>
+        <script src="./scripts/vue.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="chat">
+            <div class="top">
+                <h2>Username</h2>
+            </div>
+            <div class="bottom">
+                <div class="left chat-window">
+                    <div class="chat-log">
+                        <div v-for="i in messages" class="message">
+                            <div class="avatar"></div>
+                            <div class="content">
+                                <p class="username">{{i.username}}</p>
+                                {{i.message}}
+                            </div>
+                        </div>
+                    </div>
+                    <input class="chat-input" placeholder="Enter message..">
+                </div>
+            </div>
+        </div>
+        <div class="contacts">
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
